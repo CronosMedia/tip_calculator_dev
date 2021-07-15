@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <logo>
+        <img src="./images/logo.svg" alt="" />
+      </logo>
+    </header>
+
+    <main>
+      <section class="left-side">
+        <div class="bill--amount">
+          <h3>Bill</h3>
+          <form class="form form--bill">
+            <div>
+              <input
+                type="number"
+                class="form_input amount-input"
+                placeholder="0"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="select--tip">
+          <h3>Select Tip %</h3>
+          <div class="btn--row">
+            <button class="btn-tip tip5">5%</button>
+            <button class="btn-tip tip10">10%</button>
+            <button class="btn-tip tip15">15%</button>
+          </div>
+          <div class="btn--row">
+            <button class="btn-tip tip25">25%</button>
+            <button class="btn-tip tip50">50%</button>
+            <input
+              type="number"
+              class="form_input tipCustom tipCustomReset"
+              id="custom"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div class="people-number">
+          <div class="message-zero">
+            <h3>Number of People</h3>
+            <h3 class="zero hidden">Can't be Zero!</h3>
+          </div>
+
+          <form class="form form--bill">
+            <div>
+              <input
+                type="number"
+                class="form_input people-input zero-hidden"
+                placeholder="0"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="right-side">
+        <div class="tip-amount">
+          <div class="tip-label">
+            <h3>Tip Amount</h3>
+            <span class="label">/ person</span>
+          </div>
+          <div class="tip-value">$<span class="person-tip">0.00</span></div>
+        </div>
+        <div class="total-person">
+          <div class="total-label">
+            <h3>Total</h3>
+            <span class="label">/ person</span>
+          </div>
+          <div class="total-value">$<span class="person-total">0.00</span></div>
+        </div>
+        <div class="reset">
+          <button class="btn-reset">RESET</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Coded by <span><a href="#"> Cronos</a></span> 2021.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
